@@ -1,0 +1,172 @@
+<div class="section bg-light py-5 ">
+    <div class="section bg-light">
+        <div class="container">
+            <div class="card-body my-5">
+                <div class="card-title text-center fs-1 fw-bold">
+                    <p>FULFILLMENT</p>
+                    <h1 class="fs-1 fw-bold">At Your Fingertips</h1>
+                    <p class="card-text text-center fw-normal fs-4 mt-3">Fully equipped mobile app for better service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div [@slideUpOut] class="container">
+            <div class="row d-flex align-items-center  justify-content-center ">
+                <!-- listArea -->
+                <div class="col-lg-3 listBox d-flex flex-column align-items-start justify-content-center ">
+                    <div class="list d-flex align-items-center justify-content-center gap-3 ">
+                        <div [ngStyle]="{'background':activeContainerId==='timeTrack'? 'linear-gradient(45deg, rgb(58 231 225), rgb(67 40 238))':'initial'}"
+                            class="iconCircle">
+                            <img src="../../assets/timely-deliver-icon.svg" alt="">
+                        </div>
+                        <div class="fw-medium ">
+                            <!-- <a (click)="goToPart('timeTrack')"> Timely Delivery</a> -->
+                            <a [ngStyle]="{'color':activeContainerId==='timeTrack'? '#0090FF':'black'}"
+                                (click)="setActiveContainer('timeTrack')">Timely Delivery</a>
+                        </div>
+                    </div>
+                    <div class="list d-flex align-items-center justify-content-center gap-3 ">
+                        <div [ngStyle]="{'background':activeContainerId==='liveTrack'? 'linear-gradient(45deg, rgb(58 231 225), rgb(67 40 238))':'initial'}"
+                            class="iconCircle">
+                            <img src="../../assets/live-tracking-icon.svg" alt="">
+                        </div>
+                        <div class="fw-medium ">
+                            <a [ngStyle]="{'color':activeContainerId==='liveTrack'? '#0090FF':'initial'}"
+                                (click)="setActiveContainer('liveTrack')">Live Tracking</a>
+                        </div>
+                    </div>
+                    <div class="list d-flex align-items-center justify-content-center gap-3 ">
+                        <div [ngStyle]="{'background':activeContainerId==='cashOD'? 'linear-gradient(45deg, rgb(58 231 225), rgb(67 40 238))':'initial'}"
+                            class="iconCircle">
+                            <img src="../../assets/cod-tracking-icon.svg" alt="">
+                        </div>
+                        <div class="fw-medium ">
+                            <a [ngStyle]="{'color':activeContainerId==='cashOD'? '#0090FF':'initial'}"
+                                (click)="setActiveContainer('cashOD')">COD Deposit</a>
+                        </div>
+                    </div>
+                    <div class="list d-flex align-items-center justify-content-center gap-3 ">
+                        <div [ngStyle]="{'background':activeContainerId==='multiplePayment'? 'linear-gradient(45deg, rgb(58 231 225), rgb(67 40 238))':'initial'}"
+                            class="iconCircle">
+                            <img src="../../assets/multiple-payment-icon.svg" alt="">
+                        </div>
+                        <div class="fw-medium ">
+                            <a [ngStyle]="{'color':activeContainerId==='multiplePayment'? '#0090FF':'initial'}"
+                                (click)="setActiveContainer('multiplePayment')">Multiple Payment Opt</a>
+                        </div>
+                    </div>
+                    <div class="list d-flex align-items-center justify-content-center gap-3 ">
+                        <div class="iconCircle">
+                            <img src="../../assets/smooth-onboarding-icon.svg" alt="">
+                        </div>
+                        <div class="fw-medium ">
+                            <a routerLink="">Smooth Onbording</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="viewContainer col-lg-9 d-flex flex-column gap-3 ">
+                    <!-- for tt -->
+                    <div [@slideUpOut] *ngIf="activeContainerId === 'timeTrack'">
+                        <div *ngFor="let container of tt">
+                            <h1>{{container[0]?.id}}</h1>
+                            <div [id]="container.id" class="row d-flex align-items-center justify-content-center p-3">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                    <img [src]="container.imageSrc" alt="" style="max-width: 90%;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card border-0">
+                                        <div class="bg-light card-body">
+                                            <p class="card-text text-capitalize fw-medium fs-6 text-info">{{
+                                                container.title }}</p>
+                                            <h1 class="card-title text-capitalize fs-1 fw-bold">{{ container.title }}
+                                            </h1>
+                                            <p class="card-text fs-5">{{ container.text }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- for lt -->
+                    <div [@slideUpOut] *ngIf="activeContainerId === 'liveTrack'">
+                        <div *ngFor="let container of lt">
+                            <h1>{{container[0]?.id}}</h1>
+                            <div [id]="container.id" class="row d-flex align-items-center justify-content-center p-3">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                    <img [src]="container.imageSrc" alt="" style="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card border-0">
+                                        <div class="bg-light card-body">
+                                            <p class="card-text text-capitalize fw-medium fs-6 text-info">{{
+                                                container.title
+                                                }}</p>
+                                            <h1 class="card-title text-capitalize fs-1 fw-bold">{{ container.title }}
+                                            </h1>
+                                            <p class="card-text fs-5">{{ container.text }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- for cod -->
+                    <div [@slideUpOut] *ngIf="activeContainerId === 'cashOD'">
+                        <div *ngFor="let container of cod">
+                            <h1>{{container[0]?.id}}</h1>
+                            <div [id]="container.id" class="row d-flex align-items-center justify-content-center p-3">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                    <img [src]="container.imageSrc" alt="" style="max-width: 90%;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card border-0">
+                                        <div class="bg-light card-body">
+                                            <p class="card-text text-capitalize fw-medium fs-6 text-info">{{
+                                                container.title
+                                                }}</p>
+                                            <h1 class="card-title text-capitalize fs-1 fw-bold">{{ container.title }}
+                                            </h1>
+                                            <p class="card-text fs-5">{{ container.text }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- for mult pay -->
+                    <div [@slideUpOut] *ngIf="activeContainerId === 'multiplePayment'">
+                        <div *ngFor="let container of multPay">
+                            <h1>{{container[0]?.id}}</h1>
+                            <div [id]="container.id" class="row d-flex align-items-center justify-content-center p-3">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                                    <img [src]="container.imageSrc" alt="" style="max-width: 90%;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card border-0">
+                                        <div class="bg-light card-body">
+                                            <p class="card-text text-capitalize fw-medium fs-6 text-info">{{
+                                                container.title
+                                                }}</p>
+                                            <h1 class="card-title text-capitalize fs-1 fw-bold">{{ container.title }}
+                                            </h1>
+                                            <p class="card-text fs-5">{{ container.text }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

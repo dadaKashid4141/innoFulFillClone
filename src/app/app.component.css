@@ -1,0 +1,68 @@
+.logoImage {
+    max-width: 10em;
+    transition: max-width 0.5s;
+}
+
+@media (max-width: 446px) {
+    .logoImage {
+        max-width: 6em
+    }
+  .imgGraphic {
+        height: 29vh;
+        transition: max-width 0.5s;
+    }
+   
+}
+
+@media (max-width: 1034px) {
+    .midDivNav {
+        display: flex;
+        align-items: start;
+        justify-content: stretch;
+    }
+}
+@media (max-width: 491px) {
+    .gtInTch{
+        display: none;
+    }
+    .login{
+        position: relative;
+        right: 30vw;
+    }
+    .navbar-toggler{
+        position: relative;
+        left: 25vw;
+    }
+}
+
+.blue-circle {
+    position: relative;
+    width: 75%;
+    background: linear-gradient(286.57deg, #0090FF -49.79%, #A766EB 100%);
+    padding-bottom: 75%;
+    border-radius: 50%;
+
+}
+
+
+.navShadow {
+    /* filter: drop-shadow(0px -1px 4px #fafafa);  */
+    box-shadow: 0 2px 20px #0000000f;
+}
+
+.imgGraphic {
+    max-width: 100%;
+    box-shadow: 0 2px 20px #0000000f;
+    max-height: 37vh;
+}
+
+/* .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+} */
+li :hover{
+    color: #0090ff;
+}

@@ -1,0 +1,14 @@
+.title{
+    border-color: #09080836;
+    background: url('../../assets/li-ellipse.1b0e1df33a4c8dd6.png') no-repeat center;
+    width: 15px;
+    height: 15px;
+    border-width: 0;
+    background-size: cover;
+    position: absolute;
+    top: 23px;
+    margin-right: 2rem;
+}
+.section{
+    overflow-x: hidden;
+}

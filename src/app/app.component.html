@@ -1,0 +1,48 @@
+
+<!-- <app-header></app-header> -->
+
+<nav style="margin-bottom: 15vh;" class="navbar navbar-expand-lg bg-white d-flex  flex-nowrap navShadow p-2">
+    <div>
+      <a class="navbar-brand m-lg-1" href="#">
+        <img src="../assets/innoLogo.svg" alt="InnoLogo" class="logoImage img-fluid mb-3">
+      </a>
+    </div>
+  
+    <button type="button" style="background: linear-gradient(to left,#0090ff,#4c88ff,#707efb,#8d73f5,#a766eb)!important"
+      class="btn text-nowrap navbar-toggler gtInTch">Get In Touch
+    </button>
+    <button class="navbar-toggler mx-2" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+      <ul class="navbar-nav text-capitalize fs-6 text-nowrap fw-semibold gap-2 text-dark">
+        <li class="nav-item">
+          <a class="nav-link" href="#app-home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#WhoIsIt">who is it for</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#howItWork"  routerLinkActive="active">how it work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#solution" routerLinkActive="active">solution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutUs" routerLinkActive="active">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://apis.innofulfill.com/">Web API</a>
+        </li>
+      </ul>
+    </div>
+    <a class="nav-link text-nowrap text-info login mx-4" routerLink="/login">
+      <i class="fas fa-user"></i> Login
+    </a>
+  </nav>
+
+<router-outlet></router-outlet>

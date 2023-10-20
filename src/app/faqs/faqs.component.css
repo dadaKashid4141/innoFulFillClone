@@ -1,0 +1,46 @@
+.card{
+    background:#f8f9fa;
+}
+.formBg{
+    /* background: #093da3;
+    background-image: url('../../assets/signup-bg.0dae3a04ab9e698e.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 63px 100px 60px;
+    border-radius: 10px;
+    box-shadow: 0 40px 50px #0018484d;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: -300px; */
+}
+.bgB{
+    background-image: url('../../assets/signup-bg.0dae3a04ab9e698e.jpg');
+    border-radius: 10px;
+    padding: 2rem;
+    filter: drop-shadow(1px 15px 19px rgb(29, 42, 63));
+}
+input,textarea{
+    width: 100%;
+    background: #fff;
+    line-height: 50px;
+    border-radius: 10px;
+    border: 0;
+}
+button{
+    background: #ccc;
+    line-height: 50px;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    width: 100%;
+}
+::placeholder{
+    padding-left: 1 rem;
+}
+.sectoin{
+    overflow: hidden;
+}
+::placeholder{
+    /* color: aqua; */
+    padding-left: 5%;
+}

@@ -1,0 +1,36 @@
+.iconCircle{
+    background:#F1F2F5;    
+    color: #63636a;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    overflow: hidden;
+}
+.list{
+    margin-bottom: 1em;
+    /* border-right: 2px solid black; */
+}
+.listBox{
+    border-right: 3px solid gray;
+    max-width: fit-content;
+    /* position: fixed;
+    top: 42%;
+    left: 3%;
+    z-index: 1000; */
+}
+a:hover{
+    /* border-right: 3px solid blue; */
+    color: rgb(22, 129, 161) !important;
+    cursor: pointer;
+    
+}
+
+.viewContainer{
+    /* height: 80vh; */
+    overflow-y: auto;
+}

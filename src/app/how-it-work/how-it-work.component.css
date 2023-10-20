@@ -1,0 +1,28 @@
+.circleDesign{
+    height: 3rem;
+    background: #fff;
+    color: #0090ff;
+    width: 3rem;
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #002b824d;
+}
+/* @media (max-width: 767px) {
+    .listingDesign{
+        background: red;
+    }
+  } */
+  /* .listingDesign{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    gap: 20px;
+  } */
+  .listingDesign {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

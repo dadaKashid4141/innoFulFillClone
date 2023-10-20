@@ -1,0 +1,35 @@
+.icon{
+    width: 70px;
+    height: 70px;
+    background:linear-gradient(135deg,rgb(132,188,250) 0%,rgb(43,112,250) 100%);
+    padding: 5%;
+    border-radius: 27%;
+    text-align: center;  
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.cardHover{
+    /* transition: transform 0.3s ease 0s; */
+    transition: linear 0.3s;
+
+}
+.cardHover:hover {
+    transform: translateY(-15px);
+    /* box-shadow: 0px 9px 14px #23a; */
+    filter: drop-shadow(-1px 18px 9px rgb(192, 192, 226));
+  }
+  .bgShape{
+    overflow: hidden;
+    background: #f9f9f9;
+    position: relative;
+    /* background-image: url('../../assets/shape-1.png'); */
+    background-position: 92% 100%;
+    background-repeat: no-repeat;
+    background-size: auto;    
+  }
+  @media (max-width: 416px) {
+    .bgShape{
+        background-size: 85%;    
+    }
+  }
