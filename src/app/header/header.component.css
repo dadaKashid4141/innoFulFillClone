@@ -24,15 +24,13 @@
 @media (max-width: 491px) {
     .gtInTch{
         display: none;
-    }
+    }  
+}
+
+@media (max-width :830px){
     .login{
-        position: relative;
-        right: 30vw;
-    }
-    .navbar-toggler{
-        position: relative;
-        left: 25vw;
-    }
+        display: none;
+     }
 }
 
 .blue-circle {
@@ -46,7 +44,6 @@
 
 
 .navShadow {
-    /* filter: drop-shadow(0px -1px 4px #fafafa);  */
     box-shadow: 0 2px 20px #0000000f;
 }
 

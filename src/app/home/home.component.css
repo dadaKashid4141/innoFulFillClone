@@ -57,3 +57,15 @@
 li :hover{
     color: #0090ff;
 }
+.loveUp{
+    animation: moves1 3s infinite;}
+.loveDw{animation: moves 3s infinite;}
+
+@keyframes moves{
+    0%,100%{transform: translateY(0);}
+    50%{transform: translateY(7px);}
+}
+@keyframes moves1{
+    0%,100%{transform: translateY(7px);}
+    50%{transform: translateY(0);}
+}

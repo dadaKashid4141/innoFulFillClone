@@ -12,7 +12,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       state('in', style({ transform: 'translateY(0)' })),
       transition('* => void', [
         style({ transform: 'translateY(0)' }),
-        animate('500ms ease-out', style({ transform: 'translateY(-100%)' })),
+        animate('500ms cubic-bezier(0, 1, 0, 1)', style({ transform: 'translateY(-100%)' })),
       ]),
     ]),
   ],

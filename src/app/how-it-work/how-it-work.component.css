@@ -26,3 +26,6 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+.listCircl{
+  justify-content: space-around;
+}
